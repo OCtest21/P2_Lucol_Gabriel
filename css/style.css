@@ -8,4 +8,28 @@
     outline: 0;
     padding: 0;
     margin: 0;
+    text-decoration: none;
   }
+
+/** police du site **/
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('css/polices/Raleway/static/Raleway-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face
+{
+    font-family: 'Thin';
+    src: url('css/polices/Raleway/static/Raleway-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+h1, p, div, aside
+{
+    font-family: 'Raleway', sans-serif;
+}
