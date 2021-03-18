@@ -30,6 +30,11 @@
     font-style: normal; 
 }
 
+body
+{
+    padding: 20px;
+}
+
 header
 {
     display: flex;
@@ -44,6 +49,7 @@ nav ul
 {
     display: flex;
     list-style-type: none;
+    padding: 10px;
 }
 
 nav li
@@ -72,4 +78,55 @@ nav a:hover
 .activite
 {
     color: black;
+}
+
+/** barre de recherche **/
+
+.s_box
+{
+    display: flex;
+    height: 3em;
+}
+
+.s_fond
+{   
+    width: 3rem;
+    background-color: rgb(221, 221, 221);
+    border: 2px rgb(226, 226, 226) solid;
+    border-radius: 15px 0px 0px 15px;
+}
+
+/** problème : l'espace de recherche déborde sur l'icone **/
+
+.s_icon
+{
+    padding: 6px;
+}
+
+input[type="search"]
+{
+    outline: none;
+    background-color: white;
+    border: 0.1em rgb(226, 226, 226) solid;
+    width: 17em;
+    padding: 15px;
+    margin-left: -12px;
+}
+
+input[type="submit"]
+{   
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 0px 15px 15px 0px;
+    width: 8em;
+    cursor: pointer;
+    background-color: #0065FC;
+    color: white;
+    left: -14px;
+}
+
+input[type="submit"]:hover
+{
+    background-color: #2a7fff;
 }
