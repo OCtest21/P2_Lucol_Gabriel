@@ -37,3 +37,39 @@ header
     justify-content: space-between;
     align-items: flex-end;
 }
+
+/** Navigation **/
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li
+{
+    margin-right: 2em;
+    
+}
+
+nav li a
+{
+    color: #0065FC;
+    font-family: 'Thin', sans-serif;
+    font-weight: lighter;
+}
+
+nav a:hover
+{
+    color: #3583f8;
+}
+
+.inscription
+{
+    font-weight: bold;
+}
+
+.activite
+{
+    color: black;
+}
