@@ -341,3 +341,23 @@ aside h3
     flex-direction: column;
     justify-content: space-around;
   }
+
+/** foooter **/
+
+footer
+{
+    background-color: #F2F2F2;
+}
+
+.conteneur
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.colonne-footer
+{
+    display: inherit;
+    flex-direction: column;
+}
