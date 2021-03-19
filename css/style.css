@@ -175,6 +175,11 @@ input[type="submit"]:hover
     padding-left: 46px;
 }
 
+.filtre_div a:hover
+{
+    color: rgb(119, 119, 119);
+}
+
 div [class="filtre_div"] span
 {   
     position: absolute;
@@ -208,7 +213,7 @@ div [class="filtre_div"] span
     margin-top: 10px;
 }
 
-.hebergement
+#hebergement
 {
     background-color: #F2F2F2;
     padding: 21px;
@@ -301,7 +306,7 @@ aside h3
 .card-image-aside
 {
     height: 131px;
-    width: 200px;
+    width: 170px;
 }
 
 .card-aside img {
@@ -322,7 +327,7 @@ aside h3
 
 /** Activité **/
 
-.activite
+#activite
 {
     display: flex;    
     flex-direction: column;   
@@ -425,3 +430,8 @@ footer
     justify-content: space-between;
     height: 100px;
 }
+
+/** 
+- intégrez les images et les bons titres 
+- rendre les cartes cliquables
+**/
