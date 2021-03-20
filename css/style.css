@@ -36,6 +36,8 @@ body
     padding: 20px;
 }
 
+/** header **/
+
 header
 {
     display: flex;
@@ -318,7 +320,6 @@ aside h3
 {
     margin: 21px;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     justify-content: space-between;
 }
