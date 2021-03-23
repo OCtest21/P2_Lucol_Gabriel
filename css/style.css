@@ -101,15 +101,22 @@ nav a:hover
     height: 3em;
     margin-top: 17px;
     margin-bottom: 34px;
+    width: auto;
 }
 
 
 .s_fond
 {   
-    width: 3rem;
+    width: 5rem;
     background-color: rgb(221, 221, 221);
     border: 2px rgb(226, 226, 226) solid;
     border-radius: 15px 0px 0px 15px;
+}
+
+.s_conteneur
+{
+    width: 100%;
+    height: 100%;
 }
 
 /** problème : l'espace de recherche déborde sur l'icone **/
@@ -139,7 +146,7 @@ input[type="submit"]
     cursor: pointer;
     background-color: #0065FC;
     color: white;
-    left: -14px;
+    
 }
 
 input[type="submit"]:hover
@@ -161,7 +168,6 @@ input[type="submit"]:hover
     font-weight: bold;          
     align-items: center;
     justify-content: space-between;
-    width: 75%;
 }
 
 .filtre_div
@@ -430,6 +436,170 @@ footer
     height: 100px;
 }
 
-/** 
-- intégrez les images et les bons titres 
-**/
+/** MEDIA QUERIES **/
+
+@media screen and (max-width: 375px)
+{
+
+    /** Général **/
+
+    img 
+    {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body 
+    { 
+        word-wrap: break-word; 
+        width: 90%;
+    }
+    
+    /** Header **/
+
+   header
+   {
+       display: block;
+       justify-content: stretch;
+   }
+
+
+   a[class="inscription"]
+   {
+       position: absolute;
+       /** right: 0;
+       top: 0;
+       margin-top: 10px; **/
+
+   }
+
+   /** Barre de recherche **/
+    
+   div[class="s-text"] b
+   {
+       font-size: 1.3em;
+   }
+
+   div[class="s-text"] p
+   {
+        padding-top: 12px;
+   }
+
+   /** filtre **/
+
+   .filtre
+    {
+        font-family: 'Raleway',sans-serif;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+
+    .filtre_div 
+    {
+        padding: 0.9em;
+        flex-direction: row;
+        
+    }
+
+    .filtre_div a 
+    {
+        border: 3px rgb(226, 226, 226) solid;
+        border-radius: 50px;
+        padding: 10px;
+        padding-left: 46px;
+    
+    }
+
+    /** hébergement **/
+
+    .hebergement-aside
+    {
+        display: flex;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    aside 
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        margin-left: 10px;
+        padding: 22px;
+        border-radius: 4%;
+        margin-top: 1em;
+    }
+
+    .card-content-aside 
+    {
+        margin: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-aside 
+    {
+        display: flex;
+        border: solid 1px #f2f2f2;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 3px;
+        position: relative;
+        box-shadow: 5px 9px 19px -14px;
+        background-color: white;
+        margin-top: 20px;
+        width: auto;
+    }
+
+    /** activité **/
+
+    .activite-card 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activite-card-haute {
+        height: 315px;
+        width: 276px;
+        border: solid 1px #F2F2F2;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 13px;
+        box-shadow: 5px 9px 19px -14px;
+        background-color: white;
+    }
+
+    /** footer **/
+
+    footer 
+    {
+        background-color: #F2F2F2;
+        margin: -30px;
+        margin-top: 85px;
+        height: auto;
+    }
+
+    .conteneur 
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        width: 85%;
+        padding: 48px;
+        font-size: 1em;
+        flex-direction: column;
+    }
+
+    .colonne-footer 
+    {
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        margin: 2em;
+    }
