@@ -70,6 +70,12 @@ nav li a
     font-weight: lighter;
 }
 
+nav li a:hover
+{
+    border-top: 4px solid #3583f8;
+    padding-top: 34px;
+}
+
 nav a:hover
 {
     color: #3583f8;
@@ -138,7 +144,7 @@ input[type="search"]
     margin-left: -12px;
 }
 
-input[type="submit"]
+form button
 {   
     position: relative;
     border: none;
@@ -151,9 +157,20 @@ input[type="submit"]
     
 }
 
-input[type="submit"]:hover
+button span
+{
+    color: white;
+    padding: 5px ;
+}
+
+form button:hover
 {
     background-color: #2a7fff;
+}
+
+button i[class="fas fa-search"] 
+{
+    display: none;
 }
 
 /** filtre **/
@@ -231,7 +248,7 @@ div [class="filtre_div"] span
 {
     background-color: #F2F2F2;
     padding: 21px;
-    border-radius: 4%;
+    border-radius: 23px;
 }
 
 .hebergement-card 
@@ -251,8 +268,8 @@ div [class="filtre_div"] span
 
 .card 
 {
-    height: 208px;
-    width: 266px;
+    height: 216px;
+    width: 262px;
     border: solid 1px #f2f2f2;
     border-radius: 30px;
     padding: 5px;
@@ -445,7 +462,7 @@ footer
 
 /** MEDIA QUERIES **/
 
-@media screen and (max-width: 375px)
+@media all and (max-width: 375px)
 {
     /** Général **/
 
@@ -501,6 +518,36 @@ footer
         padding-top: 12px;
    }
 
+   form button 
+   {
+        position: absolute;
+        border: none;
+        outline: none;
+        border-radius: 15px 15px 15px 15px;
+        cursor: pointer;
+        background-color: #0065FC;
+        color: white;
+        padding: 5px;
+        width: 49px;
+        margin-right: 31px;
+        right: 0;
+        align-self: center;
+        height: 46px;
+        left: 284px;
+    }
+
+    button span
+    {
+        display: none;
+    }
+
+    button i[class="fas fa-search"] 
+    {
+        color: white;
+        padding: 5px;
+        display: contents;
+    }
+
    /** filtre **/
 
    .filtre
@@ -531,11 +578,11 @@ footer
 
     /** hébergement **/
 
-    .hebergement-aside 
+    .hebergement-aside
     {
         display: flex;
         margin-top: 10px;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     aside 
@@ -543,10 +590,9 @@ footer
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-        margin-left: 10px;
-        padding: 22px;
-        border-radius: 4%;
-        margin-top: 20px;
+        padding: 16px;
+        border-radius: 23px;
+        margin-top: 11px;
     }
 
     .card-content-aside 
@@ -560,7 +606,7 @@ footer
     .card-aside {
         display: flex;
         height: 130px;
-        width: 262px;
+        width: 288px;
         border: solid 1px #f2f2f2;
         border-radius: 30px;
         padding: 5px;
@@ -579,7 +625,8 @@ footer
         flex-wrap: wrap;
     }
 
-    .activite-card-haute {
+    .activite-card-haute 
+    {
         height: 315px;
         width: 276px;
         border: solid 1px #F2F2F2;
