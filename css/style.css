@@ -718,3 +718,14 @@ footer
         margin: 2em;
     }
 }
+
+@media all and (max-width: 768px)
+
+{
+    /** Général **/
+
+    body
+    {
+        width: min-content;
+    }
+}
