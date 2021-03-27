@@ -48,7 +48,12 @@ header
     align-items: flex-end;
 }
 
-.iphone-menu
+.inscription-responsive
+{
+    display: none;
+}
+
+.menu-responsive
 {
     display: none;
 }
@@ -489,6 +494,11 @@ footer
    {
        display: block;
        justify-content: stretch;
+   }
+
+   .inscription-responsive
+   {
+       display: contents;
    }
 
    /** Navigation **/
