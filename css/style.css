@@ -242,8 +242,9 @@ div [class="filtre_div"] span
     border-radius: 50%;
     padding: 9px;
     display: inline-block;
+    height: 14px;
     width: 14px;
-    text-align-last: center;
+    text-align: center;
 }
 
 .filtre-info
@@ -312,7 +313,7 @@ div [class="filtre_div"] span
   }
   
   .card-stars {
-    color: blue;
+    color: #0065fc;
   }
 
 /** aside **/
@@ -483,7 +484,7 @@ footer
 
 /** MEDIA QUERIES **/
 
-@media all and (max-width: 375px)
+@media all and (max-width: 450px)
 {
     /** Général **/
 
@@ -716,7 +717,7 @@ footer
         justify-content: space-between;
         margin: 10px;
         width: 85%;
-        padding: 48px;
+        padding: 0px;
         font-size: 1em;
         flex-direction: column;
     }
