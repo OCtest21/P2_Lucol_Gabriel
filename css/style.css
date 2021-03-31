@@ -18,7 +18,7 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url('css/polices/Raleway/static/Raleway-Regular.ttf') format('truetype'); 
+    src: url('./polices/Raleway/static/Raleway-Regular.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;  
 }
@@ -26,7 +26,7 @@
 @font-face
 {
     font-family: 'Thin';
-    src: url('css/polices/Raleway/static/Raleway-Thin.ttf') format('truetype');
+    src: url('./polices/Raleway/static/Raleway-Thin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal; 
 }
