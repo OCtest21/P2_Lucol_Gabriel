@@ -9,8 +9,8 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
     color: black;
+    font-family: 'Raleway', sans-serif;
   }
 
 /** police du site **/
@@ -23,13 +23,30 @@
     font-style: normal;  
 }
 
+
 @font-face
 {
     font-family: 'Thin';
     src: url('./polices/Raleway/static/Raleway-Thin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal; 
+} 
+
+
+@font-face
+{
+    font-family: 'Raleway-bold';
+    src: url("./polices/Raleway/static/Raleway-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+h1,h2,h3,h4,b
+{
+    font-family: 'Raleway-bold';
+}
+
+/** body **/
 
 body
 {
@@ -77,7 +94,7 @@ nav li
 nav li a
 {
     color: #0065FC;
-    font-family: 'Thin', sans-serif;
+
     font-weight: lighter;
 }
 
@@ -94,7 +111,7 @@ nav a:hover
 
 .inscription
 {
-    font-weight: bold;
+    font-family: 'Raleway-bold';
 }
 
 .activite-w
@@ -143,7 +160,6 @@ nav a:hover
     height: 100%;
 }
 
-/** problème : l'espace de recherche déborde sur l'icone **/
 
 .s_icon
 {
@@ -199,7 +215,6 @@ button i[class="fas fa-search"]
 .filtre
 {
     display: flex;
-    font-family: 'Raleway',sans-serif;
     font-weight: bold;          
     align-items: center;
     flex-wrap: wrap;
@@ -217,6 +232,7 @@ button i[class="fas fa-search"]
     padding: 9px;
     padding-left: 38px;
     margin: 8px;
+    font-family: 'Raleway-bold';
 }
 
 .filtre_div a:hover
