@@ -48,11 +48,15 @@ h1,h2,h3,h4,b
 
 /** body **/
 
-body
+main
 {
     padding: 20px;
     max-width: 1220px;
     margin: auto;
+}
+
+body
+{
     width: 100%;
 }
 
@@ -417,7 +421,7 @@ aside h3
 
 .activite-card-haute
 {
-    max-width: max-content;
+    /**max-width: max-content;**/
     border: solid 1px #F2F2F2;
     border-radius: 30px;
     padding: 5px;
@@ -445,7 +449,7 @@ aside h3
 .activite-card-basse
 {
     height: 124px;
-    width: 280px;
+    /* max-width: 280px; */
     border: solid 1px #F2F2F2;
     border-radius: 30px;
     padding: 5px;
@@ -487,8 +491,6 @@ aside h3
 footer
 {
     background-color: #F2F2F2;
-    margin: -30px;
-    margin-top: 85px;
     padding-bottom: 170px;
 }
 
@@ -497,8 +499,7 @@ footer
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    width: 85%;
-    padding: 48px;
+    padding: 35px;
 }
 
 .colonne-footer
