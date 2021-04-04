@@ -60,6 +60,18 @@ body
     width: 100%;
 }
 
+/** icone **/
+
+.fas
+{
+    color: #0065FC;
+}
+
+.fa-chart-line
+{
+    color: black;
+}
+
 /** header **/
 
 header
@@ -250,10 +262,13 @@ div [class="filtre_div"] span
     background-color: #DEEBFF;
     border-radius: 50px;
     text-align: center;
-    vertical-align: middle;
     padding: 12px;
     margin: 1px;
     margin-top: -12px;
+    height: 19px;
+    width: 19px;
+    justify-content: center;
+    align-content: center;
 }
 
 .info
@@ -294,14 +309,17 @@ div [class="filtre_div"] span
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
-    justify-content: center;
-    align-items: center;
 }
 
 .hebergement-text
 {
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.hebergement-text a
+{
+    font-family: 'Raleway-bold';
 }
 
 /** section hebergement cards **/
@@ -530,19 +548,23 @@ footer
     
     /** Header **/
 
+   
    header
    {
-       display: block;
-       justify-content: stretch;
+       display: flex;
+       flex-direction: column;
    }
 
-   .inscription-responsive
+   .menu-i
    {
-       display: contents;
+        align-self: baseline;
    }
+
 
    /** Navigation **/
-    nav
+
+
+   /** nav
     {
         display: none;
     }
@@ -586,6 +608,9 @@ footer
         font-weight: bold;
         color: #0065FC;
     }
+    **/
+
+    heade
 
    /** text sous NAV **/
 
@@ -669,6 +694,14 @@ footer
 
     /** hébergement **/
 
+    .hebergement-card 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        justify-content: center;
+    }
+
     .hebergement-aside
     {
         display: flex;
@@ -745,7 +778,7 @@ footer
     {
         display: flex;
         justify-content: space-between;
-        margin: 10px;
+        margin: 40px;
         width: 85%;
         padding: 0px;
         font-size: 1em;
