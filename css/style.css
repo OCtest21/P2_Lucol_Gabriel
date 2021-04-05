@@ -92,6 +92,7 @@ header
     justify-content: space-between;
     align-items: center;
     margin-top: 22px;
+    padding: 10px;
 }
 
 /** Navigation **/
@@ -569,7 +570,6 @@ footer
        max-width: 1220px;
        margin: auto;
        margin-top: 30px;
-       padding: 18px;
    }
 
    .menu-i
@@ -585,6 +585,11 @@ footer
 
    /** Navigation **/
 
+
+   nav 
+   {
+    margin-top: 34px;
+    }
 
    nav li
    {
@@ -615,7 +620,7 @@ footer
    .inscription
    {
         position: absolute;
-        top: 33px;
+        top: 50px;
         color: #0065FC;
         margin-right: 35px;
    }
@@ -743,6 +748,11 @@ footer
 
     /** hébergement **/
 
+    #hebergement
+    {
+        background-color: transparent;
+    }
+
     .hebergement-card 
     {
         display: flex;
@@ -755,7 +765,7 @@ footer
     {
         display: flex;
         margin-top: 10px;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
     aside 
