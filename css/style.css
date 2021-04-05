@@ -91,6 +91,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 22px;
 }
 
 /** Navigation **/
@@ -122,7 +123,7 @@ nav li a
 
 nav li a:hover
 {
-    border-top: 4px solid #3583f8;
+    border-top: 2px solid #3583f8;
     padding-top: 33px;
 }
 
@@ -575,6 +576,11 @@ footer
         align-self: baseline;
    }
 
+   #logo-reservia
+   {
+       margin-left: 28px;
+   }
+
 
    /** Navigation **/
 
@@ -588,17 +594,29 @@ footer
     margin: 0;
    }
 
+   nav li:hover
+   {
+       border-bottom-color: #3583f8;
+   }
+
    nav ul
    {
     font-size: larger;
     width: 419px;
    }
+   
+   nav li a:hover
+   {
+       border-top: none;
+   }
+   
 
    .inscription
    {
         position: absolute;
         top: 33px;
         color: #0065FC;
+        margin-right: 35px;
    }
 
     /**.menu-responsive
