@@ -72,6 +72,18 @@ body
     color: black;
 }
 
+.fa-star
+{
+    color: #0065FC;
+}
+
+.fas.fa-star.grey-star
+{
+    color: grey;
+}
+
+
+
 /** header **/
 
 header
